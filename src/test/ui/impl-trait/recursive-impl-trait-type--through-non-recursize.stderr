@@ -20,7 +20,7 @@ error[E0720]: opaque type expands to a recursive type
 LL | fn recursive_wrap() -> impl Sized {
    |                        ^^^^^^^^^^ expands to a recursive type
    |
-   = note: expanded type is `((impl Sized,),)`
+   = note: expanded type is `(impl Sized,)`
 
 error[E0720]: opaque type expands to a recursive type
   --> $DIR/recursive-impl-trait-type--through-non-recursize.rs:21:25
@@ -28,7 +28,7 @@ error[E0720]: opaque type expands to a recursive type
 LL | fn recursive_wrap2() -> impl Sized {
    |                         ^^^^^^^^^^ expands to a recursive type
    |
-   = note: expanded type is `((impl Sized,),)`
+   = note: expanded type is `(impl Sized,)`
 
 error: aborting due to 4 previous errors
 
